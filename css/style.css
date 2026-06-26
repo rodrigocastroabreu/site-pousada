@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   TOPO
+========================= */
+
+.container-topo {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.cor-verde {
+    color: #4ca37b;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #4ca37b;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    position: relative;
+    margin-top: 70px;
+}
+
+.banner img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+.painel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(38, 168, 146, .65);
+    border: 2px solid rgba(255,255,255,.6);
+
+    padding: 40px 60px;
+    text-align: center;
+    color: white;
+}
+
+.painel h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.painel p {
+    font-size: 26px;
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.container-conteudo {
+    width: 1024px;
+    max-width: 90%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.conteudo-texto h1,
+.container-rota h1,
+.sobre h1 {
+    font-size: 42px;
+    color: #444;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.conteudo-texto p,
+.container-rota h2,
+.sobre p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   QUARTOS
+========================= */
+
+.imagens {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.imagens div {
+    flex: 1;
+}
+
+.imagens img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.imagens p {
+    margin-top: 15px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #4ca37b;
+    font-weight: bold;
+}
+
+/* =========================
+   ROTA
+========================= */
+
+.container-rota {
+    text-align: center;
+    margin: 80px 0 40px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+}
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    text-align: center;
+    margin: 80px 0 50px;
+}
+
+.infos {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 48%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.texto {
+    width: 70%;
+}
+
+.texto h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.texto p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.imagem img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    margin-top: 50px;
+    background: #5b9f87;
+    color: white;
+    padding: 30px 0 20px;
+}
+
+.container-footer {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.titulo {
+    width: 220px;
+}
+
+.titulo h2 {
+    font-size: 30px;
+}
+
+.item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item img {
+    width: 42px;
+}
+
+.item p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+footer hr {
+    width: 1200px;
+    max-width: 90%;
+    margin: 30px auto 20px;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,.35);
+}
+
+.copy {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width:900px){
+
+    .container-topo{
+        flex-direction:column;
+        height:auto;
+        padding:15px 0;
+    }
+
+    .banner{
+        margin-top:110px;
+    }
+
+    .painel{
+        width:90%;
+        padding:25px;
+    }
+
+    .painel h1{
+        font-size:34px;
+    }
+
+    .painel p{
+        font-size:20px;
+    }
+
+    .imagens{
+        flex-direction:column;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .container-footer{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .item{
+        justify-content:center;
+    }
+}

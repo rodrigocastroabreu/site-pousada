@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.topo{
+    width:1200px;
+    max-width:90%;
+    margin:auto;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.topo span{
+    color:#6ab391;
+}
+
+nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color:#444;
+    font-size:14px;
+}
+
+.banner{
+    height:180px;
+    background:url("../assets/img-fundo.jpg") center/cover no-repeat;
+}
+
+.titulo{
+    text-align:center;
+    margin:80px 0 40px;
+}
+
+.titulo h1{
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.titulo p{
+    color:#666;
+}
+
+.quarto{
+    width:1200px;
+    max-width:90%;
+    margin:0 auto 90px;
+}
+
+.galeria{
+    display:flex;
+    gap:5px;
+}
+
+.galeria img{
+    width:33.33%;
+    height:250px;
+    object-fit:cover;
+}
+
+.quarto h3{
+    text-align:center;
+    margin:50px 0 30px;
+}
+
+.quarto ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.quarto li{
+    width:23%;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#5b9f87;
+    color:#fff;
+    padding:30px 0 20px;
+}
+
+.rodape{
+    width:1200px;
+    max-width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.contato{
+    width:220px;
+}
+
+.item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex:1;
+}
+
+.item i{
+    font-size:35px;
+}
+
+footer hr{
+    width:1200px;
+    max-width:90%;
+    margin:30px auto 20px;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.3);
+}
+
+.copy{
+    text-align:center;
+    font-weight:bold;
+}
